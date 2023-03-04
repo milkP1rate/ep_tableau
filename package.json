@@ -1,0 +1,34 @@
+{
+    "name": "ep_tableau",
+    "description": "Adds tables to etherpad-lite",
+    "version": "1.0.1",
+    "main": "index.js",
+    "author": {
+        "name": "Mamy Linx",
+        "email": "mamy.else@gmail.com",
+        "url": "https://github.com/mamylinx"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mamylinx/ep_tableau.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mamylinx/ep_tableau/issues"
+    },
+    "homepage": "https://github.com/mamylinx/ep_tableau",
+    "bundleDependencies": [],
+    "dependencies": {},
+    "deprecated": false,
+    "engines": {
+        "node": ">=10.13.0"
+    },
+    "keywords": [
+        "ep",
+        "etherpad",
+        "plugin",
+        "tables"
+    ],
+    "peerDependencies": {
+        "ep_etherpad-lite": ">=1.8.6"
+    }
+}
