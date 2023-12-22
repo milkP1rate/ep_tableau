@@ -616,7 +616,7 @@ var Datatables = function () {
     if (numOfRows != 0) {
       for (var i = 0; i < tblRows.length; i++) {
         tblRows[i] = " ";
-              }
+      }
     }
     payload = [tblRows];
     if (table) {
@@ -796,10 +796,10 @@ var Datatables = function () {
       while (rep.selStart[0] < rep.lines.length() && rep.lines.atIndex(rep.selStart[0]).text.indexOf('data-tables') != -1) { //count num of rows above current pos
         var cellPos = this.getTdInfo(payload, currTd).cellEndOffset;
         var newText = '" ",';
-                if (currTd == payload[0].length - 1) { //add to the most right
+        if (currTd == payload[0].length - 1) { //add to the most right
           rep.selStart[1] = rep.selEnd[1] = cellPos - this.vars.OVERHEAD_LEN_ROW_END + 1;
           newText = '," "';
-                  } else if (currTd == -1) { //add to most left
+        } else if (currTd == -1) { //add to most left
           rep.selStart[1] = rep.selEnd[1] = this.vars.OVERHEAD_LEN_PRE - 1;
         } else {
           rep.selStart[1] = rep.selEnd[1] = cellPos - 1;
@@ -879,7 +879,7 @@ var Datatables = function () {
     if (numOfRows != 0) {
       for (var i = 0; i < tblRows.length; i++) {
         tblRows[i] = " ";
-              }
+      }
     }
     payload = [tblRows];
     if (table) {
@@ -947,7 +947,7 @@ var Datatables = function () {
       // never delete the first space in a cell
       else if (currLineText.substring(currCarretPos - 2, currCarretPos) == '" ') return false;
       switch (keyCode) {
-        case this.vars.JS_KEY_CODE_BS:  
+        case this.vars.JS_KEY_CODE_BS:
           if (cellEntryLen != 0 && cellEntryLen > (currTdInfo.leftOverTdTxtLen - this.vars.OVERHEAD_LEN_MID)) {
             isDeleteAccepted = true;
           }
